@@ -1,0 +1,10 @@
+version: '3.5'
+
+services:
+  chrome:
+    build:
+      args:
+        - CHROME_REPOSITORY=seleniarm/standalone-chromium
+    ports:
+      - "4444:4444"
+    shm_size: 2gb
